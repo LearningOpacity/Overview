@@ -1,4 +1,5 @@
-# Functional
+# Requirements
+## Functional
 The system shall
 1. Provide secure endpoints for user connection.
     1. Provide ONLY secure endpoints for user connection.
@@ -8,9 +9,9 @@ The system shall
 4. Provide an example client interface.
     1. Provide a means of viewing data.
     2. Provide a means of modifying data.
-# Operational
+## Operational
 The system shall
 1. Be packaged as a set of Docker containers.
-# Developmental
+## Developmental
 The system shall
 1. Use Node.js for a server environment.

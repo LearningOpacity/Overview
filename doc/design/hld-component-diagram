@@ -1,0 +1,15 @@
+@startuml
+node "Opacifier" {
+  () "Secure Endpoint" as SecEnd
+  database DataStore <<Docker Container>>
+  [Secure Gateway] as Gateway <<Docker Container>>
+  Gateway -left- SecEnd
+  Gateway -down- DataStore : logging
+}
+
+[Example Client] as Client
+cloud "3rd Party Data Source" as DataSource
+
+SecEnd <-left-> Client : <<REST>>
+Gateway <-right-> DataSource : <<REST>>
+@enduml
